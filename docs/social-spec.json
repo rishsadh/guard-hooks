@@ -1,0 +1,1 @@
+{ "theme": "rishsadh", "pre": "Stop the agent write that ", "accent": "damages", "post": " the file.", "sub": "npx github:rishsadh/guard-hooks init", "prompt": true, "repo": "rishsadh/guard-hooks", "size": 68 }
