@@ -1,0 +1,67 @@
+{
+  "ladder": [
+    {
+      "id": "read",
+      "rank": 0,
+      "summary": "Looks at something and changes nothing.",
+      "examples": [
+        "Read, Glob, Grep",
+        "ls, cat, git status, git log",
+        "curl with GET"
+      ]
+    },
+    {
+      "id": "local-write",
+      "rank": 1,
+      "summary": "Creates or changes files or state on this machine, in a way git or a backup can undo.",
+      "examples": [
+        "Write, Edit",
+        "mkdir, cp, mv, sed -i",
+        "git add, git commit",
+        "npm install"
+      ]
+    },
+    {
+      "id": "delete",
+      "rank": 2,
+      "summary": "Destroys data, or discards work that has no copy.",
+      "examples": [
+        "rm, Remove-Item",
+        "git reset --hard, git clean",
+        "docker system prune",
+        "SQL DROP or DELETE"
+      ]
+    },
+    {
+      "id": "external-send",
+      "rank": 3,
+      "summary": "Sends data to another system or person, or changes state there. Cannot be taken back by the sender.",
+      "examples": [
+        "git push",
+        "curl -X POST",
+        "gh issue comment",
+        "an MCP tool that creates or sends"
+      ]
+    },
+    {
+      "id": "deploy",
+      "rank": 4,
+      "summary": "Publishes or releases something that other people or systems will run or read.",
+      "examples": [
+        "npm publish, docker push",
+        "netlify deploy, kubectl apply, terraform apply",
+        "git push to main"
+      ]
+    },
+    {
+      "id": "spend",
+      "rank": 5,
+      "summary": "Uses money or metered credit.",
+      "examples": [
+        "calls to paid model APIs",
+        "creating cloud machines",
+        "an MCP tool that generates media"
+      ]
+    }
+  ]
+}
