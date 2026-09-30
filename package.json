@@ -1,0 +1,41 @@
+{
+  "name": "guard-hooks",
+  "version": "0.1.0",
+  "description": "Hooks that block an agent write that would damage a file (lost BOM, mojibake, changed line endings) and classify an action's risk level.",
+  "type": "module",
+  "bin": {
+    "guard-hooks": "bin/guard-hooks.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./levels": "./src/levels.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "hooks",
+    "agents",
+    "bom",
+    "mojibake",
+    "line-endings",
+    "powershell",
+    "guardrails"
+  ],
+  "author": "Rish Sadh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishsadh/guard-hooks.git"
+  }
+}
