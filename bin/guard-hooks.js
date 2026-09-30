@@ -179,7 +179,7 @@ async function main() {
   if (cmd === 'init') {
     const snippet = settingsSnippet({ gate: has(args, '--gate'), fix: !has(args, '--no-fix') });
     console.log(JSON.stringify(snippet, null, 2));
-    if (isEphemeralInstall()) console.error('\nNote: this ran from an npx cache, so the hooks call "guard-hooks" on PATH. Install it first: npm install -g github:rishsadh/guard-hooks');
+    if (isEphemeralInstall()) console.error('\nNote: this ran from an npx cache, so the hooks call "guard-hooks" on PATH. Install it first: npm install -g guard-hooks');
     console.error('\nMerge this into .claude/settings.json (project) or ~/.claude/settings.json (user). Nothing was written.');
     return 0;
   }

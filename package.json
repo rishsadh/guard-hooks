@@ -13,8 +13,12 @@
   "files": [
     "bin",
     "src",
-    "docs",
-    "examples"
+    "docs/ENCODING.md",
+    "docs/LEVELS.md",
+    "docs/levels.json",
+    "examples",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "node --test"
@@ -37,5 +41,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rishsadh/guard-hooks.git"
+  },
+  "homepage": "https://github.com/rishsadh/guard-hooks#readme",
+  "bugs": {
+    "url": "https://github.com/rishsadh/guard-hooks/issues"
   }
 }

@@ -1,5 +1,5 @@
 #!/bin/sh
 # Git pre-commit hook: refuse a commit that loses a BOM, changes line endings or adds mojibake.
 # Install: copy to .git/hooks/pre-commit and make it executable.
-# Needs guard-hooks on PATH (npm install -g github:rishsadh/guard-hooks) or use npx below.
-exec npx --yes github:rishsadh/guard-hooks staged
+# Needs guard-hooks on PATH (npm install -g guard-hooks) or use npx below.
+exec npx --yes guard-hooks staged

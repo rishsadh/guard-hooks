@@ -5,8 +5,10 @@ Hooks that block an agent write that would damage a file (lost BOM, mojibake, ch
 ![A run of guard-hooks: six agent calls checked, five blocked, and six calls given an action level](docs/demo.png)
 
 ```sh
-npx github:rishsadh/guard-hooks init
+npx guard-hooks init
 ```
+
+The same works straight from GitHub: `npx github:rishsadh/guard-hooks init`.
 
 `init` prints the settings snippet for Claude Code. It writes nothing. Merge it into `.claude/settings.json`. Zero dependencies, Node 18 or newer.
 
@@ -28,7 +30,7 @@ The same package carries a small classifier for what a tool call does: read, loc
 ### Install the hooks
 
 ```sh
-npm install -g github:rishsadh/guard-hooks   # so the hooks start fast
+npm install -g guard-hooks   # so the hooks start fast. From GitHub: npm install -g github:rishsadh/guard-hooks
 guard-hooks init            # encoding guard
 guard-hooks init --gate     # plus the action-level gate
 ```
