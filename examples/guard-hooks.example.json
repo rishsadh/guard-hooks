@@ -1,0 +1,17 @@
+{
+  "ignore": ["vendor/**", "**/*.min.js"],
+  "allow": [
+    { "glob": "**/*.bat", "codes": ["eol-changed", "eol-mixed"] }
+  ],
+  "requireBom": ["**/*.pas", "**/*.dfm", "**/*.sql"],
+  "powershell": "5.1",
+  "gate": {
+    "ask": ["delete", "external-send", "deploy", "spend"],
+    "deny": [],
+    "askFlags": ["remote-code"],
+    "rules": [
+      { "tool": "^mcp__studio__render", "level": "spend" },
+      { "command": "^\\./ship\\.sh", "level": "deploy" }
+    ]
+  }
+}
